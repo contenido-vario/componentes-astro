@@ -1,0 +1,21 @@
+---
+ const {post} = Astro.props
+---
+
+  <article id="article" 
+           class="flex max-w-sm flex-col gap-2 rounded bg-gray-800 
+  px-5 py-6 text-white">
+    <img class="rounded w-full h-48 object-cover" src="/img/gato.webp">
+    <h2 class="text-2xl font-bold">{post.title}</h2>
+    <p>{post.description}</p>
+      <p class="text-zinc-300">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      Neque eius distinctio aspernatur incidunt, 
+      tempore expedita architecto est, 
+      sint natus, nihil quaerat nisi. 
+      Saepe pariatur nihil fugit itaque 
+      esse doloribus corporis!
+    </p>
+    <p class="text-zinc-300">10/12/2023 - 16 min read</p>
+  </article>
+  
