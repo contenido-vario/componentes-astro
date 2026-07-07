@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import Post from "../components/Post.astro"
+import PostUno from "../components/PostUno.astro"
 ---
 
 <html lang="es-Es">
@@ -13,11 +13,11 @@ import Post from "../components/Post.astro"
 		<title>Astro</title>
 	</head>
 	<body class="container w-5/6 p-4">
-		<h1>Usar componente</h1>
+		<h1 class="text-3xl text-center">Enviarle texto a un componente</h1>
 
-		<Post/>
-		<Post/>
-		<Post/>
-		<Post/>
+		<PostUno title="POST NUMERO UNO" description="¿Por qué duermen tanto los gatos?"/>
+
+		<PostUno title="POST NUMERO DOS" description="Valeriana para gatos: sedantes y juguetes?"/>
+
 	</body>
 </html>
